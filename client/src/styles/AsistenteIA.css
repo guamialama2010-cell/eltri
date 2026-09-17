@@ -1,0 +1,94 @@
+.asistente-ia {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.asistente-ia h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.ia-mensajes {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.ia-mensaje {
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 12px;
+  max-width: 85%;
+  white-space: pre-wrap;
+}
+
+.ia-mensaje.usuario {
+  background: #2563eb;
+  color: white;
+  margin-left: auto;
+}
+
+.ia-mensaje.asistente {
+  background: #e5e7eb;
+  color: #111827;
+  margin-right: auto;
+}
+
+.ia-form {
+  display: flex;
+  gap: 10px;
+}
+
+.ia-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.ia-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ia-form button:hover {
+  background: #1d4ed8;
+}
+
+.ia-form button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.ia-sugerencias {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.ia-sugerencias button {
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ia-sugerencias button:hover {
+  background: #dbeafe;
+}
