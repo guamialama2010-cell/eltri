@@ -1,5 +1,5 @@
 // Configuración de la API
-const API_URL = "http://localhost:3000";
+const API_URL = "https://eltri-va03.onrender.com";
 
 // Función para hacer peticiones a la API
 const apiCall = async (endpoint, options = {}) => {

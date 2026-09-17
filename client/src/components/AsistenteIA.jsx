@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "../styles/AsistenteIA.css";
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'https://eltri-va03.onrender.com';
 
 export default function AsistenteIA({ tareas = [], materias = [], calificaciones = [] }) {
   const [pregunta, setPregunta] = useState('');
