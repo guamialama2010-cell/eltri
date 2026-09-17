@@ -2,15 +2,19 @@ import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dbPath = path.join(__dirname, '..', 'data', 'eltri.db');
+const dataDir = path.join(__dirname, '..', 'data');
+const dbPath = path.join(dataDir, 'eltri.db');
 
 let db;
 
 export async function initDatabase() {
+  fs.mkdirSync(dataDir, { recursive: true });
+
   db = await open({
     filename: dbPath,
     driver: sqlite3.Database
